@@ -1,0 +1,20 @@
+{
+  "name": "one-schedule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "egg-bin dev"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "egg": "^1.7.0",
+    "egg-mysql": "^3.0.0",
+    "egg-validate": "^1.0.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.1.0"
+  }
+}

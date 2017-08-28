@@ -1,0 +1,220 @@
+{
+  "keys": "D:\\node\\one.schedule\\config\\config.default.js",
+  "logger": {
+    "dir": "D:\\node\\one.schedule\\config\\config.default.js",
+    "encoding": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "env": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "level": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.local.js"
+    }
+  },
+  "onerror": {
+    "errorPageUrl": "D:\\node\\one.schedule\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "D:\\node\\one.schedule\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "session": {
+    "maxAge": "D:\\node\\one.schedule\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "D:\\node\\one.schedule\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\node\\one.schedule\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "D:\\node\\one.schedule\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "D:\\node\\one.schedule\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "D:\\node\\one.schedule\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "D:\\node\\one.schedule\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "D:\\node\\one.schedule\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "D:\\node\\one.schedule\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "D:\\node\\one.schedule\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "D:\\node\\one.schedule\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "D:\\node\\one.schedule\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "multipart": {
+    "autoFields": "D:\\node\\one.schedule\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\node\\one.schedule\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\node\\one.schedule\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\node\\one.schedule\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "D:\\node\\one.schedule\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "D:\\node\\one.schedule\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "D:\\node\\one.schedule\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\node\\one.schedule\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\node\\one.schedule\\node_modules\\egg-multipart\\config\\config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+    "csrf": {
+      "enable": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xframe": {
+      "enable": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "development": {
+    "watchDirs": "D:\\node\\one.schedule\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "D:\\node\\one.schedule\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "D:\\node\\one.schedule\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "D:\\node\\one.schedule\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "D:\\node\\one.schedule\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "D:\\node\\one.schedule\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "D:\\node\\one.schedule\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "D:\\node\\one.schedule\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "D:\\node\\one.schedule\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "D:\\node\\one.schedule\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "D:\\node\\one.schedule\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "D:\\node\\one.schedule\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "D:\\node\\one.schedule\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "D:\\node\\one.schedule\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "D:\\node\\one.schedule\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "D:\\node\\one.schedule\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "D:\\node\\one.schedule\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "D:\\node\\one.schedule\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "D:\\node\\one.schedule\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "view": {
+    "root": "D:\\node\\one.schedule\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "D:\\node\\one.schedule\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\node\\one.schedule\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "D:\\node\\one.schedule\\node_modules\\egg-view\\config\\config.default.js",
+    "mapping": "D:\\node\\one.schedule\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "env": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+  "name": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "version": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "description": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "main": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "scripts": {
+      "start": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+      "dev": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+    },
+    "author": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "license": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "dependencies": {
+      "egg": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "baseDir": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "strict": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+      "depth": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "httpclient": {
+    "enableDNSCache": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxAge": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketKeepAliveTimeout": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketKeepAliveTimeout": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "coreMiddleware": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+      "port": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "D:\\node\\one.schedule\\node_modules\\egg\\config\\config.default.js"
+    }
+  }
+}
