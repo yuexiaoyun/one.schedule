@@ -18,22 +18,23 @@
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "D:\\node\\one.schedule\\node_modules\\egg-onerror\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-session\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-i18n\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-watcher\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-multipart\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-security\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-development\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-schedule\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-logrotator\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-static\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-jsonp\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-view\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-mysql\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg-validate\\config\\locales",
-        "D:\\node\\one.schedule\\node_modules\\egg\\config\\locales",
-        "D:\\node\\one.schedule\\config\\locales"
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-onerror/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-session/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-i18n/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-watcher/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-multipart/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-security/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-development/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-schedule/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-logrotator/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-static/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-jsonp/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-view/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-mysql/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-knex/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-validate/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/config/locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -43,8 +44,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "D:\\node\\one.schedule\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "D:\\node\\one.schedule\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "multipart": {
@@ -128,7 +129,7 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "D:\\node\\one.schedule\\app\\public",
+      "dir": "/Users/yuexiaoyun/codes/one.schedule/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
@@ -144,7 +145,7 @@
       "csrf": false
     },
     "view": {
-      "root": "D:\\node\\one.schedule\\app\\view",
+      "root": "/Users/yuexiaoyun/codes/one.schedule/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -158,11 +159,36 @@
       "app": true,
       "agent": false,
       "client": {
-        "host": "120.25.128.214",
+        "host": "127.0.0.1",
         "port": "3306",
         "user": "root",
         "password": "<String len: 6>",
         "database": "db_one"
+      }
+    },
+    "knex": {
+      "default": {
+        "dialect": "mysql",
+        "connection": {
+          "database": null
+        },
+        "pool": {
+          "min": 0,
+          "max": 5
+        },
+        "acquireConnectionTimeout": 30000
+      },
+      "app": true,
+      "agent": false,
+      "client": {
+        "dialect": "mysql",
+        "connection": {
+          "host": "127.0.0.1",
+          "port": "3306",
+          "user": "root",
+          "password": "<String len: 6>",
+          "database": "db_one"
+        }
       }
     },
     "env": "local",
@@ -185,6 +211,7 @@
       "license": "MIT",
       "dependencies": {
         "egg": "^1.7.0",
+        "egg-knex": "^2.0.1",
         "egg-mysql": "^3.0.0",
         "egg-validate": "^1.0.0"
       },
@@ -192,9 +219,9 @@
         "egg-bin": "^4.1.0"
       }
     },
-    "baseDir": "D:\\node\\one.schedule",
-    "HOME": "C:\\Users\\Yue",
-    "rundir": "D:\\node\\one.schedule\\run",
+    "baseDir": "/Users/yuexiaoyun/codes/one.schedule",
+    "HOME": "/Users/yuexiaoyun",
+    "rundir": "/Users/yuexiaoyun/codes/one.schedule/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -315,8 +342,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-onerror",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-onerror",
       "version": "1.5.0"
     },
     "session": {
@@ -326,8 +353,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-session",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-session",
       "version": "2.1.1"
     },
     "i18n": {
@@ -337,8 +364,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-i18n",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-i18n",
       "version": "1.1.1"
     },
     "watcher": {
@@ -348,8 +375,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-watcher",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-watcher",
       "version": "2.1.3"
     },
     "multipart": {
@@ -359,8 +386,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-multipart",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-multipart",
       "version": "1.5.0"
     },
     "security": {
@@ -372,8 +399,8 @@
         "session"
       ],
       "env": [],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-security",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-security",
       "version": "1.12.1"
     },
     "development": {
@@ -387,8 +414,8 @@
       "env": [
         "local"
       ],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-development",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-development",
       "version": "1.3.1"
     },
     "schedule": {
@@ -398,8 +425,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-schedule",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-schedule",
       "version": "2.4.1"
     },
     "logrotator": {
@@ -411,8 +438,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-logrotator",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-logrotator",
       "version": "2.2.3"
     },
     "static": {
@@ -422,8 +449,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-static",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-static",
       "version": "1.4.1"
     },
     "jsonp": {
@@ -435,8 +462,8 @@
         "security"
       ],
       "env": [],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-jsonp",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-jsonp",
       "version": "1.1.2"
     },
     "view": {
@@ -446,8 +473,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\node\\one.schedule\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-view",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-view",
       "version": "1.1.2"
     },
     "mysql": {
@@ -457,9 +484,20 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\node\\one.schedule\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-mysql",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-mysql",
       "version": "3.0.0"
+    },
+    "knex": {
+      "enable": true,
+      "package": "egg-knex",
+      "name": "knex",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/yuexiaoyun/codes/one.schedule/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-knex",
+      "version": "2.0.1"
     },
     "validate": {
       "enable": true,
@@ -468,8 +506,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\node\\one.schedule\\config\\plugin.js",
-      "path": "D:\\node\\one.schedule\\node_modules\\egg-validate",
+      "from": "/Users/yuexiaoyun/codes/one.schedule/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-validate",
       "version": "1.0.0"
     }
   }
