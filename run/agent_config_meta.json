@@ -17,20 +17,38 @@
       "consoleLevel": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/config.local.js"
     }
   },
-  "mysql": {
+  "knex": {
     "client": {
-      "host": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js",
-      "port": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js",
-      "user": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js",
-      "password": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js",
-      "database": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js"
+      "dialect": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js",
+      "connection": {
+        "host": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js",
+        "port": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js",
+        "user": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js",
+        "password": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js",
+        "database": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js"
+      }
     },
     "default": {
-      "database": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-mysql/config/config.default.js",
-      "connectionLimit": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-mysql/config/config.default.js"
+      "dialect": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-knex/config/config.default.js",
+      "connection": {
+        "database": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-knex/config/config.default.js"
+      },
+      "pool": {
+        "min": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-knex/config/config.default.js",
+        "max": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-knex/config/config.default.js"
+      },
+      "acquireConnectionTimeout": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-knex/config/config.default.js"
     },
-    "app": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-mysql/config/config.default.js",
-    "agent": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-mysql/config/config.default.js"
+    "app": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-knex/config/config.default.js",
+    "agent": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-knex/config/config.default.js"
+  },
+  "tortoise": {
+    "client": {
+      "uri": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js"
+    },
+    "agent": "/Users/yuexiaoyun/codes/one.schedule/config/config.default.js",
+    "default": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-tortoise/config/config.default.js",
+    "app": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-tortoise/config/config.default.js"
   },
   "onerror": {
     "errorPageUrl": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-onerror/config/config.default.js",
@@ -148,6 +166,14 @@
     "defaultViewEngine": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-view/config/config.default.js",
     "mapping": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-view/config/config.default.js"
   },
+  "mysql": {
+    "default": {
+      "database": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-mysql/config/config.default.js",
+      "connectionLimit": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-mysql/config/config.default.js"
+    },
+    "app": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-mysql/config/config.default.js",
+    "agent": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-mysql/config/config.default.js"
+  },
   "env": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/config.default.js",
   "name": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/config.default.js",
   "proxy": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/config.default.js",
@@ -167,7 +193,10 @@
     "license": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/config.default.js",
     "dependencies": {
       "egg": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/config.default.js",
+      "egg-knex": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/config.default.js",
       "egg-mysql": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/config.default.js",
+      "egg-tortoise": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/config.default.js",
       "egg-validate": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {

@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  one.schedule:
+    image: one.schedule
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 7001:7001
+      - 9229:9229
+    volumes:
+      - .:/usr/src/app
+    command: node --inspect src/index.js

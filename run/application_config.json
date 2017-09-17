@@ -33,6 +33,7 @@
         "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-mysql/config/locales",
         "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-knex/config/locales",
         "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-validate/config/locales",
+        "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-tortoise/config/locales",
         "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg/config/locales",
         "/Users/yuexiaoyun/codes/one.schedule/config/locales"
       ],
@@ -157,14 +158,7 @@
         "connectionLimit": 5
       },
       "app": true,
-      "agent": false,
-      "client": {
-        "host": "127.0.0.1",
-        "port": "3306",
-        "user": "root",
-        "password": "<String len: 6>",
-        "database": "db_one"
-      }
+      "agent": false
     },
     "knex": {
       "default": {
@@ -191,6 +185,14 @@
         }
       }
     },
+    "tortoise": {
+      "default": {},
+      "app": true,
+      "agent": true,
+      "client": {
+        "uri": "amqp://guest:guest@localhost"
+      }
+    },
     "env": "local",
     "name": "one-schedule",
     "keys": "<String len: 3>",
@@ -204,7 +206,7 @@
       "description": "",
       "main": "index.js",
       "scripts": {
-        "start": "node src/index.js",
+        "start": "egg-scripts start",
         "dev": "egg-bin dev"
       },
       "author": "",
@@ -213,6 +215,8 @@
         "egg": "^1.7.0",
         "egg-knex": "^2.0.1",
         "egg-mysql": "^3.0.0",
+        "egg-scripts": "^1.1.1",
+        "egg-tortoise": "^1.0.0",
         "egg-validate": "^1.0.0"
       },
       "devDependencies": {
@@ -508,6 +512,17 @@
       "env": [],
       "from": "/Users/yuexiaoyun/codes/one.schedule/config/plugin.js",
       "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-validate",
+      "version": "1.0.0"
+    },
+    "tortoise": {
+      "enable": true,
+      "package": "egg-tortoise",
+      "name": "tortoise",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/yuexiaoyun/codes/one.schedule/config/plugin.js",
+      "path": "/Users/yuexiaoyun/codes/one.schedule/node_modules/egg-tortoise",
       "version": "1.0.0"
     }
   }

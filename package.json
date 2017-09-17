@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "egg-scripts start",
     "dev": "egg-bin dev"
   },
   "author": "",
@@ -13,6 +13,8 @@
     "egg": "^1.7.0",
     "egg-knex": "^2.0.1",
     "egg-mysql": "^3.0.0",
+    "egg-scripts": "^1.1.1",
+    "egg-tortoise": "^1.0.0",
     "egg-validate": "^1.0.0"
   },
   "devDependencies": {
