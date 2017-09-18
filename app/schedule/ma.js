@@ -1,5 +1,5 @@
 module.exports = {
-    schedule: { interval: '60s', type: 'all' },
+    schedule: { interval: '60s', type: 'worker' },
     task: async ctx => {
         //获取需要接榫的新报名学生
         console.log(`检查时间：${new Date().toLocaleString()}`)
