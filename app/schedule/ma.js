@@ -1,5 +1,5 @@
 module.exports = {
-    schedule: { interval: '60s', type: 'worker' },
+    schedule: { interval: '160s', type: 'worker' },
     task: async ctx => {
         //获取需要接榫的新报名学生
         console.log(`检查时间：${new Date().toLocaleString()}`)
@@ -16,10 +16,7 @@ module.exports = {
                 console.log(`--------------------------------------------------------------------`);
                 var msg = {
                     hourId,
-                    hourGroupId,
-                    // courseId: group.courseId,
-                    // courseName: group.courseName,
-                    // option: group.option
+                    hourGroupId
                 };
                 // console.log(msg);
                 return ctx.app.tortoise.queue('Balance').publish(msg).then(x => {

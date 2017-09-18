@@ -138,12 +138,7 @@ module.exports = app => {
                 amount_daoshi: group.option.daoshi_Price * users.length
             };
             await knex('hours').update(data).where('id', hourId);
-            // 业务员
-            if (users.length > 0) {
-                users.forEach(async user => {
-                    await that.wall(user.ecspId, group.option.changz_Price, `${title}_${user.userName}_招生提成`);
-                });
-            }
+
             // 老师
             if (teach) {
                 console.log(teach);
@@ -151,19 +146,22 @@ module.exports = app => {
                 await that.wall(teach.userId, group.option.changz_Price * users.length, `${title}_场租`);
             }
             if (_group) await that.wall(_group.userId, group.option.changz_Price * users.length, `${title}_导师奖金`);
+            // 业务员
+            if (users.length > 0) {
+                users.forEach(async user => {
+                    await that.wall(user.ecspId, group.option.changz_Price, `${title}_${user.userName}_招生提成`);
+                });
+            }
+
         };
 
         async wall(uid, amount, title) {
             var { knex } = app;
             console.log([uid, amount, title])
-            await knex('users_wallets').where('userId', uid).first().then(wall => {
-                if (!wall) return knex('users_wallets').insert({ userId: uid, amount: 0, createAt: new Date(), status: 1 });
-            });
             await knex.raw('update users_wallets set amount=amount+:amount where userId= :userId;', {
                 userId: uid,
                 amount: amount
             });
-            //await knex('users_wallets').update('amount', amount).where('userId', uid);
             await knex('wallets_records').insert({
                 userId: uid,
                 title: title,
@@ -172,6 +170,7 @@ module.exports = app => {
                 dateline: new Date(),
                 status: 1
             })
+            return true;
         }
 
     };
