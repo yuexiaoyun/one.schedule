@@ -140,7 +140,7 @@
         "acquireConnectionTimeout": 30000
       },
       "app": true,
-      "agent": false,
+      "agent": true,
       "client": {
         "dialect": "mysql",
         "connection": {

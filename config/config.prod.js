@@ -17,7 +17,6 @@ module.exports = {
     tortoise: {
         client: {
             uri: 'amqp://guest:guest@rabbitmq'
-        },
-        agent: true
+        }
     }
 };

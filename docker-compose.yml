@@ -1,7 +1,7 @@
-version: '3'
+version: '2.2'
 services:
   one.schedule:
-    image: one.schedule
+    image: registry.cn-hangzhou.aliyuncs.com/kunlun/one.schedule:latest
     build: .
     links:
       - rabbitmq

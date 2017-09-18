@@ -1,0 +1,15 @@
+version: '2'
+services:
+  one.schedule:
+    image: 'registry.cn-hangzhou.aliyuncs.com/kunlun/one.schedule:latest'
+    links:
+      - rabbitmq
+      - mysql
+    ports:
+      - '8080:8080'
+  rabbitmq:
+    external:
+      host: '10.25.209.66'
+  mysql:
+    external:
+      host: '10.25.209.66'
