@@ -8,7 +8,7 @@ module.exports = agent => {
                 console.log('-------------------结算业务处理------------------');
                 console.log(`--------- 处理时间：${new Date().toLocaleString()} -------------`);
                 var data = JSON.parse(msg);
-                agent.messenger.sendToApp('auto_balance_action', data);
+                agent.messenger.sendRandom('auto_balance_action', data);
                 ack();
                 console.log('-------------------结算业务处理------------------');
             });
