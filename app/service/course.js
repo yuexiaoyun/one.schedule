@@ -145,11 +145,11 @@ module.exports = app => {
                 await that.wall(teach.userId, group.option.kechou_Price * users.length, `${title}_课筹`);
                 await that.wall(teach.userId, group.option.changz_Price * users.length, `${title}_场租`);
             }
-            if (_group) await that.wall(_group.userId, group.option.changz_Price * users.length, `${title}_导师奖金`);
+            if (_group) await that.wall(_group.userId, group.option.daoshi_Price * users.length, `${title}_导师奖金`);
             // 业务员
             if (users.length > 0) {
                 users.forEach(async user => {
-                    await that.wall(user.ecspId, group.option.changz_Price, `${title}_${user.userName}_招生提成`);
+                    await that.wall(user.ecspId, group.option.zhashe_Price, `${title}_${user.userName}_招生提成`);
                 });
             }
 
