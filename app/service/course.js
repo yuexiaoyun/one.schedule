@@ -137,7 +137,7 @@ module.exports = app => {
                 amount_manage: group.option.manage_Price * users.length,
                 amount_daoshi: group.option.daoshi_Price * users.length
             };
-            return await knex('hours').update(data).where('id', hourId);
+            await knex('hours').update(data).where('id', hourId);
             // 业务员
             if (users.length > 0) {
                 users.forEach(async user => {
