@@ -71,7 +71,7 @@ module.exports = app => {
 
             console.log(`每课费用：${group.option.total_Base_Amount}`);
             console.log(`预先结算：${group.option.total_Base_Amount * 0.5}`);
-            console.log(`* 课筹：${group.option.kechou_Price}`);
+            console.log(`* 课酬：${group.option.kechou_Price}`);
             console.log(`* 场租：${group.option.changz_Price}`);
             console.log(`* 招生：${group.option.zhashe_Price}`);
             console.log(`* 管理费：${group.option.manage_Price}`);
@@ -108,7 +108,7 @@ module.exports = app => {
             await knex('balances').insert(__data).returning('id').then(id => {
                 var id = id[0];
                 var _data_detail = [];
-                _data_detail.push({ balabceId: id, amount: group.option.kechou_Price * users.length, tag: '课筹', userId: teach ? teach.userId : 0 });
+                _data_detail.push({ balabceId: id, amount: group.option.kechou_Price * users.length, tag: '课酬', userId: teach ? teach.userId : 0 });
                 _data_detail.push({ balabceId: id, amount: group.option.changz_Price * users.length, tag: '场租', userId: teach ? teach.userId : 0 })
                 _data_detail.push({ balabceId: id, amount: group.option.daoshi_Price * users.length, tag: '导师奖金', userId: _group ? _group.userId : 0 })
                 users.length > 0 && users.forEach(user => {
@@ -142,7 +142,7 @@ module.exports = app => {
             // 老师
             if (teach) {
                 console.log(teach);
-                await that.wall(teach.userId, group.option.kechou_Price * users.length, `${title}_课筹`);
+                await that.wall(teach.userId, group.option.kechou_Price * users.length, `${title}_课酬`);
                 await that.wall(teach.userId, group.option.changz_Price * users.length, `${title}_场租`);
             }
             if (_group) await that.wall(_group.userId, group.option.daoshi_Price * users.length, `${title}_导师奖金`);
