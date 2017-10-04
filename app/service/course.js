@@ -83,15 +83,29 @@ module.exports = app => {
 
             var title = `${group.groupName}_${group.subjectName}_${hour.title}`;
 
+
             var teach = await knex('users')
                 .select(['users.id as userId', 'users.name'])
                 .innerJoin('users_teachers', 'users_teachers.userid', 'users.id')
                 .where('users_teachers.id', group.userId).first();
+            if (!teach) {
+                throw new Error('未设置教师或教师状态异常');
+            }
+            var owner = await knex('users')
+                .select(['users.id as userId', 'users.name'])
+                .innerJoin('users_teachers', 'users_teachers.userid', 'users.id')
+                .where('users_teachers.id', group.ownerId).first();
+            if (!teach) {
+                throw new Error('未设置场租结算教师或场租结算教师状态异常');
+            }
             // 导师
             var _group = await knex('tb_groups')
                 .select(['instructors.userId'])
                 .innerJoin('instructors', 'instructors.id', 'tb_groups.userId')
                 .where('bid', group.groupId).first();
+            if (!_group) {
+                throw new Error('未设置导师或导师状态异常');
+            }
             var __data = {
                 courseId: group.courseId,
                 courseName: group.courseName,
@@ -109,7 +123,7 @@ module.exports = app => {
                 var id = id[0];
                 var _data_detail = [];
                 _data_detail.push({ balabceId: id, amount: group.option.kechou_Price * users.length, tag: '课酬', userId: teach ? teach.userId : 0 });
-                _data_detail.push({ balabceId: id, amount: group.option.changz_Price * users.length, tag: '场租', userId: teach ? teach.userId : 0 })
+                _data_detail.push({ balabceId: id, amount: group.option.changz_Price * users.length, tag: '场租', userId: owner ? owner.userId : 0 })
                 _data_detail.push({ balabceId: id, amount: group.option.daoshi_Price * users.length, tag: '导师奖金', userId: _group ? _group.userId : 0 })
                 users.length > 0 && users.forEach(user => {
                     _data_detail.push({
@@ -143,7 +157,10 @@ module.exports = app => {
             if (teach) {
                 console.log(teach);
                 await that.wall(teach.userId, group.option.kechou_Price * users.length, `${title}_课酬`);
-                await that.wall(teach.userId, group.option.changz_Price * users.length, `${title}_场租`);
+            }
+            //场租
+            if (owner) {
+                await that.wall(owner.userId, group.option.changz_Price * users.length, `${title}_场租`);
             }
             if (_group) await that.wall(_group.userId, group.option.daoshi_Price * users.length, `${title}_导师奖金`);
             // 业务员
