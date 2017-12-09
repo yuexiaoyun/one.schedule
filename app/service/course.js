@@ -22,10 +22,10 @@ module.exports = app => {
             var basePrice = item.price;
             var a = {
                 kechou_Price: basePrice * 0.20, //课酬  to 老师
-                zhashe_Price: basePrice * 0.03, //招生提成 to 业务员
+                zhashe_Price: basePrice * 0.04, //招生提成 to 业务员
                 changz_Price: basePrice * 0.15, //场租  to 老师
                 manage_Price: basePrice * 0.07, //管理费  to 归属升学保
-                daoshi_Price: basePrice * 0.05, //升学导师奖金 to 升学导师.B
+                daoshi_Price: basePrice * 0.04, //升学导师奖金 to 升学导师.B
                 total_Base_Amount: basePrice,
                 total_A_Amount: basePrice * .30,
                 total_B_Amount: basePrice * .30,
@@ -63,7 +63,10 @@ module.exports = app => {
                 ])
                 .innerJoin('users_ecspts', 'users_ecspts.id', 'tb_groups_users.ecspId')
                 .innerJoin('users', 'users.id', 'tb_groups_users.user_id')
-                .where('tb_groups_users.course_id', hour.gid);
+                .where('tb_groups_users.course_id', hour.gid)
+                .where('tb_groups_users.status', 1);
+
+
             if (users.length == 0) {
                 throw new Error('未设置业务员');
             }
